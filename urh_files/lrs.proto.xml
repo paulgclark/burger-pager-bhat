@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<protocol>
+   <decodings>
+      <decoding>'Non Return To Zero (NRZ)', </decoding>
+      <decoding>'Non Return To Zero + Invert', 'Invert', </decoding>
+      <decoding>'Manchester I', 'Edge Trigger', </decoding>
+      <decoding>'Manchester II', 'Edge Trigger', 'Invert', </decoding>
+      <decoding>'Differential Manchester', 'Edge Trigger', 'Differential Encoding', </decoding>
+   </decodings>
+   <participants/>
+   <messages>
+      <message message_type_id="ad8abcc7-46ae-4073-9af0-4f1586523cf4" modulator_index="0" pause="4883751" timestamp="1690832469.6393042" bits="110011001100110011001100110011001100110011001100110101010101001010101100110100110010101010101100101010101100101010101010101100110010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010110010110101001100111001100110011001100110011001100110011001100110011010101010100101010110011010011001010101010110010101010110010101010101010110011001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101011001011010100110011100110011001100110011001100110011001100110011001101010101010010101011001101001100101010101011001010101011001010101010101011001100101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101100101101010011001" decoding_index="3"/>
+      <message message_type_id="ad8abcc7-46ae-4073-9af0-4f1586523cf4" modulator_index="0" pause="2348958" timestamp="1690832469.639332" bits="110011001100110011001100110011001100110011001100110101010101001010101100110100110010101010101100101010101100101010101010101101001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010110010110101001101001001100110011001100110011001100110011001100110011010101010100101010110011010011001010101010110010101010110010101010101010110100101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101011001011010100110100100110011001100110011001100110011001100110011001101010101010010101011001101001100101010101011001010101011001010101010101011010010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101100101101010011010" decoding_index="3"/>
+      <message message_type_id="ad8abcc7-46ae-4073-9af0-4f1586523cf4" modulator_index="0" pause="4351259" timestamp="1690832469.6393502" bits="110011001100110011001100110011001100110011001100110101010101001010101100110100110010101010101100101010101100101010101010101101010010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010110010110101010010111001100110011001100110011001100110011001100110011010101010100101010110011010011001010101010110010101010110010101010101010110101001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101011001011010101001011100110011001100110011001100110011001100110011001101010101010010101011001101001100101010101011001010101011001010101010101011010100101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101100101101010100101" decoding_index="3"/>
+   </messages>
+   <message_types>
+      <message_type name="Default" id="53c0e900-a2c3-439b-8627-b91810386cce" assigned_by_ruleset="0" assigned_by_logic_analyzer="0">
+         <ruleset mode="0"/>
+      </message_type>
+      <message_type name="LRS Pager" id="ad8abcc7-46ae-4073-9af0-4f1586523cf4" assigned_by_ruleset="1" assigned_by_logic_analyzer="0">
+         <label name="preamble" start="0" end="24" color_index="0" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="synchronization" start="24" end="40" color_index="1" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="side_id" start="40" end="48" color_index="2" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="system_id" start="48" end="56" color_index="3" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="pager_id" start="56" end="64" color_index="4" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="reserved_zeros" start="64" end="104" color_index="5" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="action" start="104" end="112" color_index="6" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <label name="arithmetic_checksum" start="112" end="120" color_index="7" apply_decoding="True" show="2" display_format_index="1" display_bit_order_index="0" display_endianness="big" fuzz_me="2" fuzz_values="" auto_created="False"/>
+         <ruleset mode="0">
+            <rule _Rule__start="0" _Rule__end="6" _Rule__value_type="1" operator="=" target_value="aaaaaa"/>
+         </ruleset>
+      </message_type>
+   </message_types>
+</protocol>
