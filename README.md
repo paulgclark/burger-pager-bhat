@@ -1,7 +1,12 @@
 # BHUSA 2023 Arsenal Lab
 
+## Creating the installer
+If you have a tar.gz file already, you can ignore this
+step. If not, create the installer with:
+./create_docker_installer.sh
+
 ## Install Instructions
-The first step is to untar the bundle, which you must
+The first step is to untar the bundle, which you may
 already have done if you're reading this!
 
 The directory created by this untar process has a few
