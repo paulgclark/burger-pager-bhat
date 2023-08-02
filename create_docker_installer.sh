@@ -4,7 +4,6 @@
 source version.sh
 
 # make temp installer directory
-rm -f burger-pager
 mkdir -p burger-pager
 
 # do a bunch of stuff inside the burger-pager directory
