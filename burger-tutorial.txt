@@ -1,1 +1,30 @@
-TBD
+* STEP 1 - Find the Signal
+Open Universal Radio Hacker (urh) and bring up the Spectrum
+Analyzer (under the File menu). Determine the frequency of
+the pager transmitter.
+
+* STEP 2 - Capture the Signal 
+Select Record Signals (under the File menu) and capture 
+several transmissions. 
+
+* STEP 3 - Tune and Demodulate 
+Open the Interpretation tab and modify the parameters
+(especially Samples/Symbol) to demodulate and extract
+the raw bits from each transmission.
+
+* STEP 4 - Decode the Raw Payload
+Switch to the Analysis tab. Determine the encoding 
+scheme and extract the decoded bits from your raw data.
+
+* STEP 5 - Identify the Data
+Determine the function of the bytes in your decoded 
+data. You do not need to understand every byte, but
+just enough to compromise the system.
+
+* STEP 6 - Computing the Checksum
+Determine the algorithm for calculating the checksum
+for a given payload. There may be shortcuts...
+
+* STEP 7 - Transmit Takeover Signal
+Using URH's Generate tab, modify a decoded payload
+to activate your pager.

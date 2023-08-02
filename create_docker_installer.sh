@@ -23,6 +23,7 @@ rm -f xfr_files.tar.gz
 mkdir xfr_files
 cp ../burger-tutorial.txt xfr_files/.
 cp ../py/*.py xfr_files/.
+cp ../py/*.grc xfr_files/.
 cp ../py/*.txt xfr_files/.
 cp ../urh_files/* xfr_files/.
 tar -czf xfr_files.tar.gz xfr_files
