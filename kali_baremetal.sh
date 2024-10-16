@@ -5,6 +5,7 @@ sudo apt update
 sudo apt -y upgrade
 sudo apt install -y libuhd-dev uhd-host
 sudo cp /usr/libexec/uhd/utils/uhd-usrp.rules /etc/udev/rules.d/.
+sudo udevadm control --reload-rules
 
 # install urh
 pipx install urh
