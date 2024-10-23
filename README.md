@@ -1,11 +1,26 @@
-# BHUSA 2023 Arsenal Lab
+# Black Hat Arsenal Lab
 
-## Creating the installer
+## Native Install Process - Ubuntu/Kali
+First, run the installer (you will need to enter your password):
+```
+./kali_baremetal.sh
+```
+
+Then create a working directory with the project files:
+```
+./refresh_kali.sh
+```
+
+You can then follow the instructions in the PDF file.
+
+## Docker Install Process
+
+### Creating the Docker installer
 If you have a tar.gz file already, you can ignore this
 step. If not, create the installer with:
 ./create_docker_installer.sh
 
-## Install Instructions
+### Install Instructions - Docker
 The first step is to untar the bundle, which you may
 already have done if you're reading this!
 
